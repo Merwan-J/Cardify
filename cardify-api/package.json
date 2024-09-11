@@ -4,18 +4,16 @@
     "description": "Instant AI Powered Flashcards from Your Notes",
     "main": "dist/index.js",
     "scripts": {
-        "build": "rimraf dist && tsc",
-        "start": "nodemon src/index.ts",
-        "ts.check": "tsc --project tsconfig.json",
-        "add-build": "git add dist"
+        "build": "tsc",
+        "start": "ts-node src/index.ts",
+        "dev": "nodemon src/index.ts",
+        "vercel-build": "echo hello"
     },
     "author": "Merwan Juneydi",
     "license": "MIT",
     "dependencies": {
         "dotenv": "^16.4.5",
-        "express": "^4.20.0",
-        "pre-commit": "^1.2.2",
-        "rimraf": "^6.0.1"
+        "express": "^4.20.0"
     },
     "devDependencies": {
         "@types/express": "^4.17.21",
@@ -23,10 +21,5 @@
         "nodemon": "^3.1.4",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.2"
-    },
-    "pre-commit": [
-        "ts.check",
-        "build",
-        "add-build"
-    ]
+    }
 }
