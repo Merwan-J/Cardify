@@ -1,5 +1,5 @@
 'use client'
-import { capitalize } from '@/lib/utils'
+import { capitalize } from '@/src/lib/utils'
 import { useTheme } from 'next-themes'
 import { useEffect, useRef, useState } from 'react'
 import { FiSun } from 'react-icons/fi'

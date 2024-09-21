@@ -1,5 +1,5 @@
 'use client'
-import { capitalize } from '@/lib/utils'
+import { capitalize } from '@/src/lib/utils'
 import Link from 'next/link'
 import { usePathname, useSelectedLayoutSegments } from 'next/navigation'
 import React, { useState } from 'react'

@@ -25,10 +25,7 @@ export const Header = () => {
         <Button rounded size='medium' className='bg-span-bg'>
           Get Started
         </Button>{' '}
-        <a
-          href='https://github.com/yahyaparvar/nextjs-template'
-          target='_blank'
-        >
+        <a href='https://github.com/Merwan-J/Cardify' target='_blank'>
           <div className='size-8'>
             <GithubIcon />
           </div>

@@ -54,18 +54,12 @@ export default function DashboardPage() {
           Transform Your Notes into Interactive Flashcards and Quizzes with AI{' '}
         </div>
         <div className='mt-4 flex flex-row gap-4'>
-          <a
-            href='https://github.com/new?template_name=nextjs-template&template_owner=yahyaparvar'
-            target='_blank'
-          >
+          <a href='' target='_blank'>
             <Button rounded size='large'>
               Get Started
             </Button>
           </a>
-          <a
-            href='https://github.com/yahyaparvar/nextjs-template'
-            target='_blank'
-          >
+          <a href='https://github.com/Merwan-J/Cardify' target='_blank'>
             <Button rounded size='large' variant='secondary'>
               Learn More
             </Button>

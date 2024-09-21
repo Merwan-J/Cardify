@@ -1,5 +1,5 @@
 {
-  "name": "next-template",
+  "name": "cardify-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,14 +23,12 @@
     "cmdk": "^0.2.1",
     "date-fns": "^3.3.1",
     "next": "14.1.0",
-    "next-intl": "^3.11.3",
     "next-themes": "^0.2.1",
     "nextjs-toploader": "^1.6.12",
     "react": "^18.2.0",
     "react-day-picker": "^8.10.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
-    "recharts": "^2.12.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.1.0"
