@@ -1,17 +1,20 @@
-import express, { Express, Request, Response } from "express";
-import dotenv from "dotenv";
+import express from "express";
+import { config } from "./utils/config";
+import morgan from "morgan";
+import contentRouter from "./routes/contentRoutes";
+import logger from "./utils/logger";
 
-dotenv.config();
+const app = express();
 
-const app: Express = express();
-const port = process.env.PORT || 8000;
+app.use(express.json());
+app.use(morgan("tiny"));
 
-app.get("/", (req: Request, res: Response) => {
-    res.send("Express + TypeScript Server");
-});
+app.use("/api/content", contentRouter);
 
-app.listen(port, () => {
-    console.log(`[server]: Server is running at http://localhost:${port}`);
+app.listen(config.port, () => {
+    logger.info(
+        `[server]: Server is running at http://localhost:${config.port}`
+    );
 });
 
 export default app;

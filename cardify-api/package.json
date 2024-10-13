@@ -1,7 +1,7 @@
 {
     "name": "cardify-api",
     "version": "1.0.0",
-    "description": "Instant AI Powered Flashcards from Your Notes",
+    "description": "Instant AI Powered Flashcards and Quizzes from Your Notes",
     "main": "dist/index.js",
     "scripts": {
         "build": "tsc",
@@ -12,13 +12,23 @@
     "author": "Merwan Juneydi",
     "license": "MIT",
     "dependencies": {
+        "@google/generative-ai": "^0.21.0",
+        "@supabase/supabase-js": "^2.45.4",
+        "@types/morgan": "^1.9.9",
+        "@types/pino": "^7.0.5",
+        "bull": "^4.10.4",
         "dotenv": "^16.4.5",
-        "express": "^4.20.0"
+        "express": "^4.20.0",
+        "ioredis": "^5.3.2",
+        "morgan": "^1.10.0",
+        "pino": "^9.4.0",
+        "redis": "^4.7.0"
     },
     "devDependencies": {
         "@types/express": "^4.17.21",
         "@types/node": "^22.5.4",
         "nodemon": "^3.1.4",
+        "pino-pretty": "^11.2.2",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.2"
     }
