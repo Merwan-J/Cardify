@@ -1,6 +1,20 @@
 export type Difficulty = "easy" | "medium" | "hard";
 export type ContentTypes = "quiz" | "flashcard";
+export interface RequestQuery {
+    type?: ContentTypes | null;
+    difficulty?: Difficulty | null;
+    outOfScope?: boolean | null;
+}
 
+export interface RequestBody {
+    title: string;
+    fileId: string;
+    type: ContentTypes;
+    difficulty: Difficulty;
+    outOfScope: boolean;
+    numberOfItems: number;
+    content: QuizQuestion[] | Flashcard[];
+}
 export interface QuizQuestion {
     question: string;
     choices: string[];
@@ -36,10 +50,4 @@ export interface Content {
     updatedAt: Date;
 }
 
-export interface JobData {
-    fileUrl: string;
-    numberOfItems: number;
-    difficulty: Difficulty;
-    outOfScope: boolean;
-    type: ContentTypes;
-}
+export interface JobData extends RequestBody {}
